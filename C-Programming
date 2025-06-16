@@ -129,3 +129,10 @@ int main() {
     return 0;
 }
 ```
+Explanation of Format Specifiers
+Format	Data Type	Example
+%d	int	scanf("%d", &number);
+%f	float	scanf("%f", &height);
+%lf	double	scanf("%lf", &avg);
+%c	char	scanf(" %c", &letter);
+%s	string	scanf("%s", name); (no & needed for char array)
