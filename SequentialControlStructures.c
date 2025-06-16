@@ -65,3 +65,63 @@ int main() {
 
     return 0;
 }
+
+// ✅ Example 5: Bill Calculation
+#include <stdio.h>
+
+int main() {
+    int quantity;
+    float price_per_item, total;
+
+    printf("Enter quantity: ");
+    scanf("%d", &quantity);
+
+    printf("Enter price per item: ");
+    scanf("%f", &price_per_item);
+
+    total = quantity * price_per_item;
+
+    printf("Total bill = %.2f\n", total);
+
+    return 0;
+}
+// ✅ Example 6: Simple Interest Calculation
+#include <stdio.h> 
+int main() {
+    float principal, rate, time, simple_interest;
+
+    printf("Enter principal amount: ");
+    scanf("%f", &principal);
+    printf("Enter rate of interest: ");
+    scanf("%f", &rate);
+    printf("Enter time in years: ");
+    scanf("%f", &time);
+
+    simple_interest = (principal * rate * time) / 100; // Calculate simple interest
+
+    printf("Simple Interest = %.2f\n", simple_interest); // Output the result
+
+    return 0;
+}
+// ✅ Example 7: Factorial Calculation
+#include <stdio.h>  
+int main() {
+    int n, i;
+    long long factorial = 1; // Initialize factorial variable
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+        return 1; // Exit if input is negative
+    }
+
+    for (i = 1; i <= n; ++i) {
+        factorial *= i; // Calculate factorial
+    }
+
+    printf("Factorial of %d = %lld\n", n, factorial); // Output the result
+
+    return 0;
+}    
