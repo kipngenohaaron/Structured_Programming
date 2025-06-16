@@ -10,5 +10,14 @@ int main() {
     printf("Sum: %d\n", sum); // Output the result
     return 0;
 }
+
+
 // ✅ Example 2: Variable Declaration and Initialization
 #include <stdio.h>
+int main() {
+    int x = 20; // Declare and initialize variable
+    int y = 30; // Another variable
+    int result = x * y; // Multiply the variables
+    printf("Result: %d\n", result); // Output the result
+    return 0;
+}
