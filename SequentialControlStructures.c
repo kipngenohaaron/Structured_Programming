@@ -21,3 +21,47 @@ int main() {
     printf("Result: %d\n", result); // Output the result
     return 0;
 }
+
+// Temperature Conversion
+#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9/5) + 32;
+
+    printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, fahrenheit);
+
+    return 0;
+}
+// ✅ Example 3: Simple Input/Output
+#include <stdio.h>
+int main() {
+    char name[50]; // Declare a character array for the name
+    printf("Enter your name: "); // Prompt user for input
+    scanf("%s", name); // Read input from user
+    printf("Hello, %s!\n", name); // Output greeting
+    return 0;
+}
+
+// ✅ Example 4: Area and Perimeter of a Rectangle
+#include <stdio.h>
+int main() {
+    float length, width, area, perimeter;
+
+    printf("Enter length of rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of rectangle: ");
+    scanf("%f", &width);
+
+    area = length * width; // Calculate area
+    perimeter = 2 * (length + width); // Calculate perimeter
+
+    printf("Area: %.2f\n", area); // Output area
+    printf("Perimeter: %.2f\n", perimeter); // Output perimeter
+
+    return 0;
+}
