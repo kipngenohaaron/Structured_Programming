@@ -125,3 +125,22 @@ int main() {
 
     return 0;
 }    
+
+// 🔹 Example: Reading Different Data Types
+#include <stdio.h>
+int main() {
+    int integer;
+    float floating_point;
+    char character;
+
+    printf("Enter an integer: ");
+    scanf("%d", &integer);
+    printf("Enter a floating-point number: ");
+    scanf("%f", &floating_point);
+    printf("Enter a character: ");
+    scanf(" %c", &character); // Note the space before %c to consume any leftover newline character
+
+    printf("You entered: Integer = %d, Float = %.2f, Character = %c\n", integer, floating_point, character);
+
+    return 0;
+}
