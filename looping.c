@@ -201,3 +201,21 @@ int main() {
     printf("Factorial of %d = %lld\n", n, factorial); // Output the result
     return 0;
 }  
+
+
+// 🔹 2. while Loop
+A while loop keeps executing a block of code as long as the condition is true.
+The condition is checked before entering the loop.
+
+// 🔹 Example 1: Print Numbers 1 to 5
+#include <stdio.h>
+int main() {
+    int i = 1;
+
+    while (i <= 5) {
+        printf("%d\n", i);
+        i++; // Increment i
+    }
+
+    return 0;
+}
