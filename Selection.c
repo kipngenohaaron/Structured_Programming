@@ -139,3 +139,80 @@ int main() {
 
     return 0;
 }
+// Program: Simple menu-based calculator.
+#include <stdio.h>
+
+int main() {
+    int a, b, choice;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Choose operation:\n");
+    printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            printf("Result: %d\n", a + b);
+            break;
+        case 2:
+            printf("Result: %d\n", a - b);
+            break;
+        case 3:
+            printf("Result: %d\n", a * b);
+            break;
+        case 4:
+            if (b != 0) {
+                printf("Result: %.2f\n", (float)a / b);
+            } else {
+                printf("Error: Division by zero\n");
+            }
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
+
+    return 0;
+}
+// Example 5: Simple Calculator
+#include <stdio.h>  
+int main() {
+    float num1, num2, result;
+    char operator;
+
+    printf("Enter first number: ");
+    scanf("%f", &num1);
+    printf("Enter second number: ");
+    scanf("%f", &num2);
+    printf("Enter operator (+, -, *, /): ");
+    scanf(" %c", &operator); // Note the space before %c to consume any leftover newline character
+
+    // Perform calculation based on operator
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            printf("Result: %.2f\n", result);
+            break;
+        case '-':
+            result = num1 - num2;
+            printf("Result: %.2f\n", result);
+            break;
+        case '*':
+            result = num1 * num2;
+            printf("Result: %.2f\n", result);
+            break;
+        case '/':
+            if (num2 != 0) {
+                result = num1 / num2;
+                printf("Result: %.2f\n", result);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Error: Invalid operator.\n");
+    }
+
+    return 0;
+}
