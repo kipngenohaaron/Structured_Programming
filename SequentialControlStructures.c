@@ -252,3 +252,33 @@ int main() {
     printf("Result: %.2f\n", result);
     return 0;
 }
+// ✅ Example 9: Temperature Conversion
+#include <stdio.h>  
+int main() {
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9/5) + 32; // Convert Celsius to Fahrenheit
+
+    printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, fahrenheit); // Output the result
+
+    return 0;
+}
+// ✅ Example 10: Sum of Natural Numbers
+#include <stdio.h>
+int main() {
+    int n, sum = 0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        sum += i; // Calculate sum of natural numbers
+    }
+
+    printf("Sum of first %d natural numbers = %d\n", n, sum); // Output the result
+
+    return 0;
+}
