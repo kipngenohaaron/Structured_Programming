@@ -166,3 +166,18 @@ int main() {
     
     return 0;
 }
+// 🔹 Example 3: Sum of First N Natural Numbers 
+#include <stdio.h>
+int main() {
+    int n, sum = 0;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        sum += i; // Calculate sum of first N natural numbers
+    }
+
+    printf("Sum of first %d natural numbers is %d\n", n, sum);
+    return 0;
+}
+// 🔹 Example 4: Factorial of a Number  
