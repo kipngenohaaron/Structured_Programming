@@ -392,3 +392,12 @@ Loop control statements allow you to alter the flow of loops. The two main types
 The `break` statement is used to exit a loop immediately, regardless of the loop condition.
 // 🔹 Example: Break Out of a Loop  
 #include <stdio.h>
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        if (i == 5) {
+            break; // Exit loop when i is 5
+        }
+        printf("%d\n", i);
+    }
+    return 0;
+}
