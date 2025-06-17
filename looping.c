@@ -284,3 +284,22 @@ int main() {
 
     return 0;
 }
+// 🔹 Example 2: Menu System
+#include <stdio.h>      
+int main() {
+    int option;
+
+    do {
+        printf("1. Say Hello\n");
+        printf("2. Exit\n");
+        printf("Choose option: ");
+        scanf("%d", &option);
+
+        if (option == 1) {
+            printf("Hello!\n");
+        }
+
+    } while (option != 2);
+
+    return 0;
+}
