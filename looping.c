@@ -303,3 +303,35 @@ int main() {
 
     return 0;
 }
+// 🔹 Example 3: Guessing Game
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+    int number, guess;
+    srand(time(0)); // Seed for random number generation
+    number = rand() % 100 + 1; // Random number between 1 and 100
+
+    do {
+        printf("Guess the number (1-100): ");
+        scanf("%d", &guess);
+
+        if (guess < number) {
+            printf("Too low! Try again.\n");
+        } else if (guess > number) {
+            printf("Too high! Try again.\n");
+        } else {
+            printf("Congratulations! You guessed the number.\n");
+        }
+
+    } while (guess != number);
+
+    return 0;
+}
+// 🔁 Loop Control Statements
+
+Loop control statements allow you to alter the flow of loops. The two main types are `break` and `continue`.
+// 🔹 `break` Statement 
+The `break` statement is used to exit a loop immediately, regardless of the loop condition.
+// 🔹 Example: Break Out of a Loop  
+#include <stdio.h>
