@@ -144,6 +144,7 @@ Use a `do...while` loop to keep asking for passwords until the correct one is en
 
 
 // ## 🔹 1. `for` Loop
+The for loop is used when you know in advance how many times you want to execute a block of code.
 // 🔹 Example 1: Print Numbers 1 to 10
 #include <stdio.h>
 int main() {
@@ -233,5 +234,35 @@ int main() {
     }
 
     printf("Total sum = %d\n", sum);
+    return 0;
+}
+
+//  Example 3: Password Attempt (Maximum 3 Tries)
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char password[20];
+    int attempt = 1;
+
+    while (attempt <= 3) {
+        printf("Enter password: ");
+        scanf("%s", password);
+
+        if (strcmp(password, "admin123") == 0) {
+            printf("Access granted!\n");
+            break;
+        } else {
+            printf("Wrong password. Try again.\n");
+        }
+
+        attempt++;
+    }
+
+    if (attempt > 3) {
+        printf("Access denied. Too many attempts.\n");
+    }
+
     return 0;
 }
