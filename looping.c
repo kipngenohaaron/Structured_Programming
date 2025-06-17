@@ -180,4 +180,24 @@ int main() {
     printf("Sum of first %d natural numbers is %d\n", n, sum);
     return 0;
 }
-// 🔹 Example 4: Factorial of a Number  
+// 🔹 Example 4: Factorial of a Number
+#include <stdio.h>
+int main() {
+    int n;
+    long long factorial = 1; // Initialize factorial variable
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+        return 1; // Exit if input is negative
+    }
+
+    for (int i = 1; i <= n; ++i) {
+        factorial *= i; // Calculate factorial
+    }
+
+    printf("Factorial of %d = %lld\n", n, factorial); // Output the result
+    return 0;
+}  
