@@ -266,3 +266,8 @@ int main() {
 
     return 0;
 }
+
+// 🔁 What is a do...while Loop
+
+The do...while loop runs the block of code first, then checks the condition afterward.
+This ensures that the loop executes at least one time, even if the condition is initially false
