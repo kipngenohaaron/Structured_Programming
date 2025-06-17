@@ -271,3 +271,16 @@ int main() {
 
 The do...while loop runs the block of code first, then checks the condition afterward.
 This ensures that the loop executes at least one time, even if the condition is initially false
+
+// 🔹 Example 1: Print Numbers 1 to 5
+#include <stdio.h>
+int main() {
+    int i = 1;
+
+    do {
+        printf("%d\n", i);
+        i++; // Increment i
+    } while (i <= 5);
+
+    return 0;
+}
