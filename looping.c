@@ -304,6 +304,26 @@ int main() {
     return 0;
 }
 
+// Repeat Until Correct Password
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char password[20];
+
+    do {
+        printf("Enter password: ");
+        scanf("%s", password);
+    } while (strcmp(password, "pass123") != 0);
+
+    printf("Access granted.\n");
+
+    return 0;
+}
+
+
+
+
 
 //  Simple Menu Program
 #include <stdio.h>
