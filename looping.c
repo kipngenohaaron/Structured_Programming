@@ -141,3 +141,28 @@ Use a `do...while` loop to keep asking for passwords until the correct one is en
 | `while`      | Before            | No             | User-driven       |
 | `do...while` | After             | Yes            | Menu systems      |
 
+
+
+// ## 🔹 1. `for` Loop
+// 🔹 Example 1: Print Numbers 1 to 10
+#include <stdio.h>
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        printf("%d\n", i); // Print numbers from 1 to 10
+    }
+    return 0;
+}
+
+// Example 2: Multiplication Table of a Number
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i); // Print multiplication table
+    }
+    
+    return 0;
+}
