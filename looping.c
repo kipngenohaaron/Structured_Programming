@@ -219,3 +219,19 @@ int main() {
 
     return 0;
 }
+// 🔹 Example 2: Sum of Numbers Until User Enters 0
+#include <stdio.h>
+int main() {
+    int num, sum = 0;
+
+    printf("Enter numbers (0 to stop):\n");
+    scanf("%d", &num);
+
+    while (num != 0) {
+        sum += num; // Add number to sum
+        scanf("%d", &num); // Read next number
+    }
+
+    printf("Total sum = %d\n", sum);
+    return 0;
+}
