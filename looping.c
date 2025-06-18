@@ -236,7 +236,7 @@ int main() {
     printf("Total sum = %d\n", sum);
     return 0;
 }
-
+// 🔹 Example 3: Count Down from 10 to 1
 //  Example 3: Password Attempt (Maximum 3 Tries)
 
 #include <stdio.h>
