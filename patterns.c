@@ -16,6 +16,13 @@ int main() {
 }
 
 // 🔹 1. Right-Angled Triangle of Stars
+
+*
+* *
+* * *
+* * * *
+* * * * *
+
 #include <stdio.h>
 
 int main() {
