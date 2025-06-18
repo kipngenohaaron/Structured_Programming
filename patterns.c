@@ -195,6 +195,9 @@ int main() {
     return 0;
 }
 // 🔷 2. Butterfly Pattern
+
+
+
 #include <stdio.h>  
 int main() {
     int n = 5;
