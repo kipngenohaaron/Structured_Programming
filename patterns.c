@@ -194,6 +194,8 @@ int main() {
 
     return 0;
 }
+
+
 // 🔷 2. Butterfly Pattern
 
 *                 * 
@@ -242,3 +244,15 @@ int main() {
 
     return 0;
 }
+// 🔷 3. Hollow Diamond Pattern
+
+    *    
+   * *   
+  *   *  
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+#include <stdio.h>  
